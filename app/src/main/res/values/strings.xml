@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">socialcafe Kitchen</string>
+
+    <string name="my_orders">Orders Kitchen</string>
+    <string name="end_order">End Order</string>
+
+    <string name="no_data_to_show">No Data To Show</string>
+    <string name="total">Total</string>
+    <string name="g_m">G.M</string>
+</resources>

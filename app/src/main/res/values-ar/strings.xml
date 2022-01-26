@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name"> مطبخ سوشيال كافيه</string>
+
+    <string name="my_orders">طلبات المطبخ </string>
+    <string name="end_order">انهاء الطلب</string>
+    <string name="no_data_to_show">لا يوجد بيانات لعرضها</string>
+    <string name="total">المجموع : </string>
+    <string name="g_m">ج.م</string>
+</resources>
