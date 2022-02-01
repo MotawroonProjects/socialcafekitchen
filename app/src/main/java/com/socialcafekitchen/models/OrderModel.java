@@ -169,9 +169,9 @@ public class OrderModel implements Serializable {
         private int qty;
         private int sale_unit_id;
         private double net_unit_price;
-        private int discount;
-        private int tax_rate;
-        private int tax;
+        private double discount;
+        private double tax_rate;
+        private double tax;
         private double total;
         private String created_at;
         private String updated_at;
@@ -209,15 +209,15 @@ public class OrderModel implements Serializable {
             return net_unit_price;
         }
 
-        public int getDiscount() {
+        public double getDiscount() {
             return discount;
         }
 
-        public int getTax_rate() {
+        public double getTax_rate() {
             return tax_rate;
         }
 
-        public int getTax() {
+        public double getTax() {
             return tax;
         }
 

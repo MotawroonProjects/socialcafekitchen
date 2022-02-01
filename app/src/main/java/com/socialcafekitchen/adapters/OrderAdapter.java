@@ -2,6 +2,7 @@ package com.socialcafekitchen.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.socialcafekitchen.R;
+import com.socialcafekitchen.activities_fragments.activity_currentorder.CurrentOrderActivity;
 import com.socialcafekitchen.databinding.CurrentOrderRowBinding;
 import com.socialcafekitchen.models.OrderModel;
 
@@ -51,15 +53,15 @@ public class OrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         ProductOrderAdapter productOrderAdapter = new ProductOrderAdapter(list.get(position).getDetails(), context);
         myHolder.binding.recView.setLayoutManager(new LinearLayoutManager(context));
         myHolder.binding.recView.setAdapter(productOrderAdapter);
-//myHolder.binding.btnendorder.setOnClickListener(new View.OnClickListener() {
-//    @Override
-//    public void onClick(View v) {
-//        if(context instanceof CurrentOrderActivity){
-//            CurrentOrderActivity orderActivity=(CurrentOrderActivity) context;
-//            orderActivity.endorder(list.get(holder.getLayoutPosition()).getId());
-//        }
-//    }
-//});
+myHolder.binding.btnendorder.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        if(context instanceof CurrentOrderActivity){
+            CurrentOrderActivity orderActivity=(CurrentOrderActivity) context;
+            orderActivity.endorder(list.get(holder.getLayoutPosition()).getId());
+        }
+    }
+});
 //Log.e("eeee",list.get(position).getOffer_value()+""+(list.get(position).getAmount()%list.get(position).getOffer_min()));
         // Log.e("ssss",((list.get(position).getHave_offer().equals("yes")?(list.get(position).getOffer_type().equals("per")?(list.get(position).getProduct_default_price().getPrice()-((list.get(position).getProduct_default_price().getPrice()*list.get(position).getOffer_value())/100)):list.get(position).getProduct_default_price().getPrice()-list.get(position).getOffer_value()):list.get(position).getProduct_default_price().getPrice())+""));
 
