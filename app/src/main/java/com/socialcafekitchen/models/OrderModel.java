@@ -166,7 +166,7 @@ public class OrderModel implements Serializable {
         private int product_id;
         private String product_batch_id;
         private String variant_id;
-        private int qty;
+        private double qty;
         private int sale_unit_id;
         private double net_unit_price;
         private double discount;
@@ -197,7 +197,7 @@ public class OrderModel implements Serializable {
             return variant_id;
         }
 
-        public int getQty() {
+        public double getQty() {
             return qty;
         }
 

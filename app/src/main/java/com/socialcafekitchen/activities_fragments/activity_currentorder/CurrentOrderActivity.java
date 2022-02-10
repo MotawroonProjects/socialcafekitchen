@@ -78,7 +78,7 @@ public class CurrentOrderActivity extends AppCompatActivity {
                 finish();
             }
         });
-       // getData();
+        // getData();
         binding.swipeRefresh.setOnRefreshListener(this::getData);
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
